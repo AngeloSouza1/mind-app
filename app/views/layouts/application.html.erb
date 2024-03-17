@@ -14,10 +14,18 @@
   <body>
 
 <% if user_signed_in?%>
-      <%= form_tag(destroy_user_session_path, method: :delete) do %>
+      <%= link_to 'Home', home_path%> 
+      <%= link_to 'Contents', contents_path%> 
+   
+<% end%>
+<br>
+<br>
+<% if user_signed_in?%>
+       <%= form_tag(destroy_user_session_path, method: :delete) do %>
         <%= submit_tag "Logout" %>
       <% end %>
 <% end%>
+
   <p class="notice"><%= notice%></p>
   <p class="alert"><%= alert%></p>
   

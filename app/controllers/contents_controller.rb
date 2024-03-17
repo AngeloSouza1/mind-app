@@ -3,4 +3,8 @@ class ContentsController < ApplicationController
   def index
     @contents = current_user.contents
   end
+
+  def new
+  end
+  @content = Content.new
 end
