@@ -6,7 +6,7 @@
     Description: <%= content.description %>
 <%= link_to 'Show', content_path(content) %>
 <%= link_to 'Edit', edit_content_path(content) %>
-
+ <%= button_to 'Delete', content_path(content), method: :delete, data: { confirm: 'Are you sure?' } %>
  <br>
 <% end %>
 
