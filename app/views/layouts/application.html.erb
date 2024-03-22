@@ -11,30 +11,29 @@
   <script src="/vendor/select2.min.js"></script>
   <link href="/vendor/select2.min.css" rel="stylesheet">
   <%= stylesheet_link_tag '/vendor/css/bootstrap.min' %>
-  
-
 
 </head>
 <body>
-
+<div class= "container">
 <% if user_signed_in? %>
-  <%= link_to 'Home', home_path %> 
-  <%= link_to 'Contents', contents_path %>
+ <%= link_to 'Home', home_path, class: 'text-decoration-none mr-3' %> 
+  <%= link_to 'Contents', contents_path, class: 'text-decoration-none' %>
 <% end %>
-<br>
-<br>
+<p>
+
 <% if user_signed_in? %>
   <%= form_tag(destroy_user_session_path, method: :delete) do %>
-    <%= submit_tag "Logout" %>
+    <%= submit_tag "Logout", class: "btn btn-outline-danger" %>
   <% end %>
 <% end %>
-
+<hr> 
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 
 <%= yield %>
 
 
+</div>
 </body>
 </html>
 
