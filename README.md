@@ -8,7 +8,7 @@ O projeto Cloud Tags é uma aplicação desenvolvida para fornecer funcionalidad
 ### 💻  Sobre o projeto
 ---
 <div align="justify">
-O objetivo principal do projeto Cloud Tags é oferecer uma solução robusta e segura para autenticação de usuários em aplicações web desenvolvidas com Ruby on Rails. Com a funcionalidade de login implementada, os usuários podem registrar-se, fazer login e logout de suas contas de forma segura, garantindo a proteção dos dados sensíveis e a privacidade das informações.
+O objetivo principal do projeto Cloud Tags é oferecer uma solução eficiente para que os usuários possam organizar e categorizar seus conteúdos através da criação e aplicação de tags. As tags permitem uma rápida identificação e filtragem de conteúdos relacionados, proporcionando uma melhor experiência de uso da plataforma.
 
 
 
