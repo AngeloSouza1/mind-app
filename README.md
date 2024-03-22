@@ -44,16 +44,17 @@ O objetivo principal do projeto Cloud Tags é oferecer uma solução robusta e s
   🔹 Devise: Utilizada para fornecer funcionalidades de autenticação, registro de usuário e gerenciamento de sessões de forma segura e eficiente.
 
 
-#### Veja!
+#### 💡 Veja!
 
 
 <a href="https://mind-app.fly.dev/">
     <img src="https://img.shields.io/badge/ACESSO AO%20PROJETO!-darkgreen" alt="Site">
+<br>
 </a>
 
 
-
-Video de demonstração
+<br>
+🔹Video de demonstração
 
 [Assista a este vídeo sobre sua funcionalidade](https://github.com/AngeloSouza1/mind-app/assets/104176076/8dd7b816-ceda-4a45-a3a5-9d263480bd6e)
 
@@ -72,7 +73,7 @@ Video de demonstração
   ```bash
 cd mind-app
 ```
- 🔹Instale as dependências do projeto utilizando o Bundler:
+ Instale as dependências do projeto utilizando o Bundler:
 
   ```bash
 bundle install
