@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>MindApp</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%= csrf_meta_tags %>
-    <%= csp_meta_tag %>
+<head>
+  <title>MindApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+  <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  <%= javascript_include_tag 'application' %>
+<script src="/vendor/jquery.min.js"></script>
+<script src="/vendor/select2.min.js"></script>
+<link href="/vendor/select2.min.css" rel="stylesheet">
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
- <%= javascript_include_tag 'application' %>
+</head>
+<body>
 
-  </head>
-
-  <body>
-
-<% if user_signed_in?%>
-      <%= link_to 'Home', home_path%> 
-      <%= link_to 'Contents', contents_path%> 
-   
-<% end%>
+<% if user_signed_in? %>
+  <%= link_to 'Home', home_path %> 
+  <%= link_to 'Contents', contents_path %>
+<% end %>
 <br>
 <br>
-<% if user_signed_in?%>
-       <%= form_tag(destroy_user_session_path, method: :delete) do %>
-        <%= submit_tag "Logout" %>
-      <% end %>
-<% end%>
+<% if user_signed_in? %>
+  <%= form_tag(destroy_user_session_path, method: :delete) do %>
+    <%= submit_tag "Logout" %>
+  <% end %>
+<% end %>
 
-  <p class="notice"><%= notice%></p>
-  <p class="alert"><%= alert%></p>
-  
-  
-    <%= yield %>
-  </body>
+<p class="notice"><%= notice %></p>
+<p class="alert"><%= alert %></p>
+
+<%= yield %>
+
+
+</body>
 </html>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    $('.select2').select2();
+  });
+</script>
+
+
+
