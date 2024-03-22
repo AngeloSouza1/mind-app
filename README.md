@@ -53,6 +53,12 @@ O objetivo principal do projeto Cloud Tags é oferecer uma solução robusta e s
 
 
 
+Video de demonstração
+
+[Assista a este vídeo sobre sua funcionalidade](https://github.com/AngeloSouza1/mind-app/assets/104176076/8dd7b816-ceda-4a45-a3a5-9d263480bd6e)
+
+
+
  ### 📋 Instalação
  Para executar a aplicação localmente em seu ambiente de desenvolvimento, siga estas etapas:
 
