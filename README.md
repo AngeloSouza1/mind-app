@@ -66,7 +66,7 @@ O objetivo principal do projeto Cloud Tags é oferecer uma solução eficiente p
  🔹 Clone o repositório em sua máquina local.
 
   ```bash
-   git clone https://github.com/AngeloSouza1/mind-app.git
+git clone https://github.com/AngeloSouza1/mind-app.git
 ```
  🔹 Abra o diretório do projeto
 
